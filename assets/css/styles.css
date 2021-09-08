@@ -49,7 +49,7 @@ body {
   background-color: var(--black-color);
   color: var(--white-color);
   font-weight: 700;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 h1, h2 {
@@ -163,7 +163,8 @@ img {
 
 /*Home*/
 .l-main {
-  height: calc(100vh - 3rem);
+  height: 100vh;
+  /* height: calc(100vh - 3rem); */
   background-color: var(--black-color);
 }
 
@@ -308,6 +309,44 @@ img {
     background-image: linear-gradient(to right, var(--black-color), var(--first-color));
 }
 
+.contact {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: max-content max-content;
+      grid-template-rows: -webkit-max-content -webkit-max-content;
+      grid-template-rows: max-content max-content;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  row-gap: 2.0rem;
+  height: 110%;
+  font-weight: 350;
+  padding: .625rem 1rem;
+    border-radius: .25rem;
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--black-color)), to(var(--first-color)));
+    background-image: linear-gradient(to right, var(--black-color), var(--first-color));
+}
+
+.work{
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: max-content max-content;
+        grid-template-rows: -webkit-max-content -webkit-max-content;
+        grid-template-rows: max-content max-content;
+    -ms-flex-line-pack: distribute;
+        align-content: space-around;
+    row-gap: 2.0rem;
+    height: 100%;
+    font-weight: 350;
+    padding: .625rem 1rem;
+      border-radius: .25rem;
+      background-image: -webkit-gradient(linear, left top, right top, from(var(--black-color)), to(var(--first-color)));
+      background-image: linear-gradient(to right, var(--black-color), var(--first-color));
+ 
+}
 /*----- MEDIA QUERIES -----*/
 @media screen and (min-width: 768px) {
   body {
@@ -405,4 +444,22 @@ img {
 .third {
   background-color: var(--first-color);
   left: 66.6%;
+}
+
+@media screen and (max-width:678px){
+  .home__social-icon{
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction:column;
+    align-content: space-between;
+  }
+}
+
+@media screen and (max-width:576px){
+  .home__social-icon{
+    display: flex;
+    flex-wrap:wrap;
+    align-content: space-between;
+    flex-direction:column;
+  }
 }

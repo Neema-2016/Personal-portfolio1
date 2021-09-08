@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Portfolio Homepage - Home</title>
+  </head>
+  <body>
+
+    <!--OVERLAY-->
+    <div class="overlay first"></div>
+    <div class="overlay second"></div>
+    <div class="overlay third"></div>
+
+    <!--HEADER-->
+    <header class="l-header">
+      <nav class="nav bd-grid">
+
+        <div>
+           <a href="#" class="nav__logo">NeEmA016</a>
+        </div>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="index.html"class="nav__link">Home</a></li>
+            <li class="nav__item"><a href="about.html"class="nav__link">About</a></li>
+            <li class="nav__item"><a href="contact.html">Contact</a></li>
+            <li class="nav__item"><a href="Work.html" class="nav__link">Projects</a></li>
+          </ul>
+        </div>
+        <div class="nav__toggle" id="nav-toggle">
+          <ion-icon name="menu"></ion-icon>
+        </div>
+      </nav>
+    </header>
+
+    <!--MAIN-->
+    <main class="l-main bd-grid">
+        <div class="work">
+            <div class="container">
+                <div class="row">
+                    <h3 style="text-align:center; margin-top:800px;">Published Articles</h3>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <img src="assets/img/vite.PNG" alt="" class="img-fluid">
+                        <p style="text-align:center"><a href="https://www.section.io/engineering-education/creating-a-react-app-using-vite/">Creating a React app using Vite</a></p>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <img src="assets/img/sessions.PNG" alt="" class="img-fluid">
+                        <p style="text-align:center"><a href="https://www.section.io/engineering-education/getting-started-with-php-sessions/">Getting Started with PHP Sessons</a></p>
+                    </div>
+                    
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-8 col-md-8 col-sm-12">
+                        <img src="assets/img/Constants.PNG" alt="" class="img-fluid">
+                        <p style="text-align:center"><a href="https://muganga.hashnode.dev/getting-started-with-php-constants">PHP Constants</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                
+                <div class="row d-flex justify-content-center">
+                    <h3 style="text-align:center; margin-top:70px;">Projects Done</h3>
+                    <div class="col-lg-12 col-md-8 col-sm-12">
+                        <img src="assets/img/netflix.PNG" alt="">
+                        <h3 style="text-align:center"><a href="https://netflix-clone-7f1f1.web.app/">The Netflix Clone</a></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+
+    <!-- MAIN -->
+    <script src="assets/js/main.js"></script>
+    
+    <!-- ICONS -->
+    <script  type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+  </body>
+</html>
